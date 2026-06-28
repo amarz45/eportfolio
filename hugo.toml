@@ -1,0 +1,52 @@
+baseURL = "https://amarz45.github.io/eportfolio/"   # or your custom domain
+locale = "en-ca"
+title = "Amar Al-Zubadi – ePortfolio"
+theme = "PaperMod"
+
+enableGitInfo = true
+
+# --- Competency tagging ---
+# Declares a "competency" taxonomy. In page front matter you write the PLURAL
+# key ("competencies"). Hugo then auto-generates an index page for every
+# competency at /competencies/<name>/ listing every artifact tagged with it.
+[taxonomies]
+  competency = "competencies"
+
+[params]
+  author   = "Amar Al-Zubaidi"
+  email    = "amaral45@my.yorku.ca"
+  linkedin = "https://www.linkedin.com/in/amar-al-zubaidi-b7b541347/"
+
+# --- Top navigation "index / navigation" ---
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About Me"
+    pageRef = "/about"
+    weight = 2
+  [[menu.main]]
+    name = "Career"
+    pageRef = "/career"
+    weight = 3
+  [[menu.main]]
+    name = "Goals & Portfolios"
+    pageRef = "/goals"
+    weight = 4
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 5
+  [[menu.main]]
+    name = "By Competency"
+    pageRef = "/competencies"
+    weight = 6
+
+[markup.goldmark.renderer]
+  unsafe = true   # allow embedding raw HTML (e.g. video iframes) in Markdown
+
+# Fail the build if an internal link/ref is broken, instead of silently
+# shipping a dead link. (External links are checked separately in CI.)
+refLinksErrorLevel = "ERROR"
