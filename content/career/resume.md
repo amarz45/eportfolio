@@ -2,6 +2,4 @@
 title: "Resume"
 ---
 
-# Resume
-
-[Download my resume (PDF)](/resume.pdf)
+[Download my resume (PDF)](/eportfolio/resume.pdf)

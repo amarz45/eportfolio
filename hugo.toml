@@ -1,6 +1,6 @@
 baseURL = "https://amarz45.github.io/eportfolio/"   # or your custom domain
 locale = "en-ca"
-title = "Amar Al-Zubadi – ePortfolio"
+title = "Amar Al-Zubaidi – ePortfolio"
 theme = "PaperMod"
 
 enableGitInfo = true
@@ -31,18 +31,18 @@ enableGitInfo = true
     name = "Career"
     pageRef = "/career"
     weight = 3
-  [[menu.main]]
-    name = "Goals & Portfolios"
-    pageRef = "/goals"
-    weight = 4
-  [[menu.main]]
-    name = "Projects"
-    pageRef = "/projects"
-    weight = 5
-  [[menu.main]]
-    name = "By Competency"
-    pageRef = "/competencies"
-    weight = 6
+  # [[menu.main]]
+  #   name = "Goals & Portfolios"
+  #   pageRef = "/goals"
+  #   weight = 4
+  # [[menu.main]]
+  #   name = "Projects"
+  #   pageRef = "/projects"
+  #   weight = 5
+  # [[menu.main]]
+  #   name = "By Competency"
+  #   pageRef = "/competencies"
+  #   weight = 6
 
 [markup.goldmark.renderer]
   unsafe = true   # allow embedding raw HTML (e.g. video iframes) in Markdown
