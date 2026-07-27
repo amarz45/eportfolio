@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-# Amar Al-Zubaidi – ePortfolio
+# Welcome to my ePortfolio
 
 I'm a Computer Science student at York University's Lassonde School of
 Engineering, currently doing my first co-op term as an IT Cybersecurity Analyst.
