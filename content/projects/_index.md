@@ -3,5 +3,3 @@ title: "Career"
 ---
 
 My education, work experience, and current résumé.
-
-[Download my résumé (PDF)](/eportfolio/resume.pdf)

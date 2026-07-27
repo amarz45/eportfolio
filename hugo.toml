@@ -14,6 +14,8 @@ enableGitInfo = true
 
 [params]
   author   = "Amar Al-Zubaidi"
+  hideAuthor = true
+  mainSections = []
   email    = "amaral45@my.yorku.ca"
   linkedin = "https://www.linkedin.com/in/amar-al-zubaidi-b7b541347/"
 
@@ -35,10 +37,10 @@ enableGitInfo = true
   #   name = "Goals & Portfolios"
   #   pageRef = "/goals"
   #   weight = 4
-  # [[menu.main]]
-  #   name = "Projects"
-  #   pageRef = "/projects"
-  #   weight = 5
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 5
   # [[menu.main]]
   #   name = "By Competency"
   #   pageRef = "/competencies"
