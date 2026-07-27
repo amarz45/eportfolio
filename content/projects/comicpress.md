@@ -1,7 +1,13 @@
 ---
-title: "comicpress"
+title: "Comicpress"
 summary: "Cross-platform C++ application that compresses digital comics for e-readers."
-competencies: ["Design", "Use of Engineering Tools", "Problem Analysis", "Life-Long Learning"]
+competencies:
+  [
+    "Design",
+    "Use of Engineering Tools",
+    "Problem Analysis",
+    "Life-Long Learning",
+  ]
 ---
 
 A cross-platform C++ GUI application that compresses and reformats digital
