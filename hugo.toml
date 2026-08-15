@@ -30,6 +30,10 @@ enableGitInfo = true
     pageRef = "/about"
     weight = 2
   [[menu.main]]
+    name = "Why Me"
+    pageRef = "/why-me"
+    weight = 3
+  [[menu.main]]
     name = "Career"
     pageRef = "/career"
     weight = 3

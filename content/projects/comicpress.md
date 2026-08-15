@@ -35,3 +35,25 @@ There already existed a similar application called [Kindle Comic Converter](http
 - Comicpress has overall better quality, especially when converting from PDF.
 
 The hardest part of writing Comicpress was parallelism. PDFium isn't thread-safe, so I used separate worker processes instead of threads, which gave me isolation without locking overhead and throughput that scales linearly with worker count. I'm the sole developer: I designed the pipeline, wrote the application, packaged it, and maintain it. It's published on Flathub and available on Linux, with Windows support working and packaging in progress.
+
+## What I'd do differently
+
+Comicpress has no automated test suite. As the sole developer I checked output by
+eye across a sample of files, which caught obvious regressions but would not
+catch a subtle quality change in the quantization step. If I started again I'd
+build a small corpus of reference pages and assert against output hashes and size
+ratios from the beginning, because retrofitting tests onto a pipeline this
+stateful is harder than writing them alongside it. Windows packaging is also
+still unfinished: the application runs there, but I underestimated how much of
+the remaining work is distribution rather than code.
+
+## Competencies demonstrated
+
+**Design** and **Problem Analysis** — the pipeline is a direct design response to
+a constraint most tools treat as a limitation. E-ink displays are greyscale,
+fixed-resolution, and render few shades, which is exactly what makes aggressive
+downscaling and quantization lossless in practice rather than destructive.
+**Use of Engineering Tools** — Qt, libVIPS, PDFium, and libarchive, plus
+multiprocess parallelism designed around a dependency that isn't thread-safe.
+**Life-Long Learning** — I taught myself image processing because finishing the
+project required it, not because I set out to learn it.

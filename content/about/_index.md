@@ -11,6 +11,7 @@ find that far more interesting than learning things in the abstract. A real
 project forces me to deal with problems I'd never run into otherwise, and
 that's usually where my learning happens.
 
-Away from the computer, I read a lot, mostly about things I'm not formally
-trained in, like economics and law. I like understanding how the world works
-outside of my own field, and reading is the easiest way in.
+Away from the computer, I read a lot. I like understanding how the world works
+outside of my own field, and reading is the easiest way in. Below is a photo of my e-reader:
+
+![E-reader](/eportfolio/img/ereader.jpg)
