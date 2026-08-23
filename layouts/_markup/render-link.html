@@ -1,0 +1,11 @@
+{{- /*
+  Same idea for links: a root-relative destination like "/resume.pdf" is passed
+  through relURL so it keeps working under a subpath baseURL. External links and
+  fragments are left alone.
+*/ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $dest := .Destination -}}
+{{- if and (not $u.IsAbs) (hasPrefix $dest "/") -}}
+  {{- $dest = strings.TrimPrefix "/" $dest | relURL -}}
+{{- end -}}
+<a href="{{ $dest }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $u.IsAbs }} rel="noopener" target="_blank"{{ end }}>{{ .Text | safeHTML }}</a>

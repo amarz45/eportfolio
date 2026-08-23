@@ -1,0 +1,18 @@
+{{- /*
+  Resolves image paths so they survive a change of baseURL or repo name.
+  Page/asset resources win; anything else (i.e. files in static/) is passed
+  through relURL, so "img/foo.png" becomes "/eportfolio/img/foo.png" today and
+  "/img/foo.png" if the site ever moves to a root domain. Write plain relative
+  paths in Markdown -- never hardcode the "/eportfolio/" prefix.
+*/ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $src = .RelPermalink -}}
+  {{- else -}}
+    {{- $src = $path | relURL -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">

@@ -1,4 +1,4 @@
-name: Deploy ePortfolio to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.148.0   # bump to the current release when you set this up
+      HUGO_VERSION: 0.148.0   # bump to match your local Hugo
     steps:
       - name: Install Hugo CLI (extended)
         run: |
@@ -33,8 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive   # pulls your theme if added as a submodule
-          fetch-depth: 0          # REQUIRED so enableGitInfo can set last-updated dates
+          submodules: recursive   # pulls the PaperMod theme submodule
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

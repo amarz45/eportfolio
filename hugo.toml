@@ -1,62 +1,42 @@
-baseURL = "https://amarz45.github.io/eportfolio/"   # or your custom domain
+baseURL = "https://amarz45.github.io/eportfolio/"
 locale = "en-ca"
-title = "Amar Al-Zubaidi – ePortfolio"
+title = "Amar Al-Zubaidi"
 theme = "PaperMod"
 
-enableGitInfo = true
-
-# --- Competency tagging ---
-# Declares a "competency" taxonomy. In page front matter you write the PLURAL
-# key ("competencies"). Hugo then auto-generates an index page for every
-# competency at /competencies/<name>/ listing every artifact tagged with it.
-[taxonomies]
-  competency = "competencies"
+# No taxonomies on this site; stop Hugo generating empty /tags/ and /categories/.
+disableKinds = ["taxonomy", "term"]
 
 [params]
   author   = "Amar Al-Zubaidi"
   hideAuthor = true
   mainSections = []
   email    = "amar.al-zubaidi@proton.me"
-  linkedin = "https://www.linkedin.com/in/amar-al-zubaidi-b7b541347/"
+  linkedin = "https://www.linkedin.com/in/amar-al"
 
-# --- Top navigation "index / navigation" ---
 [menu]
   [[menu.main]]
     name = "Home"
     pageRef = "/"
     weight = 1
   [[menu.main]]
-    name = "About Me"
-    pageRef = "/about"
+    name = "Projects"
+    pageRef = "/projects"
     weight = 2
   [[menu.main]]
-    name = "Why Me"
-    pageRef = "/why-me"
+    name = "Writings"
+    pageRef = "/writings"
     weight = 3
   [[menu.main]]
     name = "Career"
     pageRef = "/career"
-    weight = 3
-  [[menu.main]]
-    name = "Goals & Portfolios"
-    pageRef = "/goals"
     weight = 4
   [[menu.main]]
-    name = "Projects"
-    pageRef = "/projects"
+    name = "About"
+    pageRef = "/about"
     weight = 5
-  [[menu.main]]
-    name = "Coursework"
-    pageRef = "/coursework"
-    weight = 6
-  [[menu.main]]
-    name = "By Competency"
-    pageRef = "/competencies"
-    weight = 7
 
 [markup.goldmark.renderer]
-  unsafe = true   # allow embedding raw HTML (e.g. video iframes) in Markdown
+  unsafe = true   # allow raw HTML in Markdown
 
-# Fail the build if an internal link/ref is broken, instead of silently
-# shipping a dead link. (External links are checked separately in CI.)
+# Fail the build on a broken internal link instead of silently shipping it.
 refLinksErrorLevel = "ERROR"

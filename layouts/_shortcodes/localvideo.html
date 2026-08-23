@@ -1,0 +1,6 @@
+{{- /* Self-hosted video from static/. Usage: {{< localvideo src="videos/demo.mp4" >}} */ -}}
+{{- $src := .Get "src" | relURL -}}
+<video controls preload="metadata" playsinline style="width:100%;height:auto;">
+  <source src="{{ $src }}" type="video/mp4">
+  <a href="{{ $src }}">Download the video</a>
+</video>

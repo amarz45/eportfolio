@@ -1,30 +1,17 @@
 ---
-title: "Home"
+title: "Amar Al-Zubaidi"
 ---
 
-# Welcome to my ePortfolio
+Welcome to my portfolio. My name is Amar, I'm a computer science student at York University's Lassonde School of Engineering, and I've just finished a co-op term as a cybersecurity analyst at Sobeys. Most of what I know I learned by building things end to end rather than by being taught, which means I'm comfortable being handed an unfamiliar system and working out how it fits together.
 
-I'm a Computer Science student at York University's Lassonde School of
-Engineering, currently doing my first co-op term as an IT Cybersecurity Analyst.
+## Here
 
-**The purpose of this site** is to show what I can actually build, not just
-describe it. It collects my education and work experience, the software I've
-written, the goals I'm working toward, and an honest reflection on what each
-piece of work taught me — including what I'd do differently. It's meant for
-employers, collaborators, and anyone deciding whether I'd be useful to work
-with.
-
-## What you'll find here
-
-- **[About Me]({{< relref "/about" >}})** — who I am and how I work
-- **[Why Me]({{< relref "/why-me" >}})** — my pitch, in text and on video
-- **[Career]({{< relref "/career" >}})** — my education, work experience, and résumé
-- **[Goals & Portfolios]({{< relref "/goals" >}})** — what I'm working toward and the evidence for it
-- **[Projects]({{< relref "/projects" >}})** — software I've built, and what I learned building it
-- **[Coursework]({{< relref "/coursework" >}})** — papers and reflections from my degree
-- **[By Competency]({{< relref "/competencies" >}})** — everything above, filtered by Lassonde undergraduate competency
+- **[Projects]({{< relref "/projects" >}})** — things I've built, and what I learned building them
+- **[Writings]({{< relref "/writings" >}})** — my writings about software
+- **[Career]({{< relref "/career" >}})** — my résumé
+- **[About]({{< relref "/about" >}})**
 
 ## Elsewhere
 
 - [GitHub](https://github.com/amarz45)
-- [LinkedIn](https://www.linkedin.com/in/amar-al-zubaidi-b7b541347/)
+- [LinkedIn](https://www.linkedin.com/in/amar-al)
