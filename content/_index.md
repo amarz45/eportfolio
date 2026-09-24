@@ -2,7 +2,7 @@
 title: "Amar Al-Zubaidi"
 ---
 
-Welcome to my portfolio. My name is Amar, I'm a computer science student at York University's Lassonde School of Engineering, and I've just finished a co-op term as a cybersecurity analyst at Sobeys. Most of what I know I learned by building things end to end rather than by being taught, which means I'm comfortable being handed an unfamiliar system and working out how it fits together.
+Welcome to my portfolio. My name is Amar, I'm a computer science student at York University's Lassonde School of Engineering, and I've just finished a co-op term as a cybersecurity analyst at Sobeys. I like to build software that has real impact.
 
 ## Here
 
